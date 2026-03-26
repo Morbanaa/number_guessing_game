@@ -6,12 +6,12 @@ import os
 import platform
 
 def main():
-    print("Hello world")
-    clear_screan()
+    number = create_number()
 
 
-def create_numbers():
-    pass
+def create_number():
+    number = random.randint(1,6)
+    return number
 
 
 def get_user_input():
