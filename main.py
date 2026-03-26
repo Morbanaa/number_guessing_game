@@ -15,7 +15,8 @@ def create_number():
 
 
 def get_user_input():
-    pass
+    guess = input("What number am I thinking off? ")
+    return guess
 
 
 def check_match():
