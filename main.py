@@ -26,7 +26,14 @@ def create_number():
 
 # Asks user to guess a number
 def get_user_input():
-    guess = int(input("What number am I thinking off? "))
+    while True:
+        guess = input("What number am I thinking off? ")
+        if guess.isdigit():
+            guess = int(guess)
+            break
+        else:
+            print("Must be a number")
+            continue
     return guess
 
 # Checks win state
