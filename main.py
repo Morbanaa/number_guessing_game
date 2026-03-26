@@ -7,6 +7,8 @@ import platform
 
 def main():
     number = create_number()
+    while True:
+        guess = get_user_input()
 
 
 def create_number():
