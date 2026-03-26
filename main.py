@@ -9,6 +9,12 @@ def main():
     number = create_number()
     while True:
         guess = get_user_input()
+        win = check_match(guess,number)
+        if win == True:
+            print(f"You Win! The number was {number}")
+            break
+        else:
+            print("Try again")
 
 
 def create_number():
@@ -17,12 +23,17 @@ def create_number():
 
 
 def get_user_input():
-    guess = input("What number am I thinking off? ")
+    guess = int(input("What number am I thinking off? "))
     return guess
 
 
-def check_match():
-    pass
+def check_match(guess,number):
+    if guess == number:
+        win = True
+        return win
+    else:
+        win = False
+        return win
 
 
 def clear_screan():
